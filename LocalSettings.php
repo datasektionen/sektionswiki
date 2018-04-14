@@ -133,14 +133,14 @@ require_once "$IP/extensions/ConfirmAccount/ConfirmAccount.php";
 $wgMakeUserPageFromBio = false;
 $wgAutoWelcomeNewUsers = false;
 $wgConfirmAccountRequestFormItems = array(
-	'UserName'        => array( 'enabled' => false ),
-	'RealName'        => array( 'enabled' => false ),
+	'UserName'        => array( 'enabled' => true ),
+	'RealName'        => array( 'enabled' => true ),
 	'Biography'       => array( 'enabled' => false, 'minWords' => 50 ),
 	'AreasOfInterest' => array( 'enabled' => false ),
 	'CV'              => array( 'enabled' => false ),
-	'Notes'           => array( 'enabled' => false ),
+	'Notes'           => array( 'enabled' => true ),
 	'Links'           => array( 'enabled' => false ),
-	'TermsOfService'  => array( 'enabled' => false ),
+	'TermsOfService'  => array( 'enabled' => true ),
 );
 
 # Disable reading by anonymous users
