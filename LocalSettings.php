@@ -51,7 +51,7 @@ $wgEnotifWatchlist = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
-preg_match("postgres:\/\/(.*):(.*)@(.*):([0-9]+)\/(.*)/", getenv('DATABASE_URL'), $output_array);
+preg_match("/postgres:\/\/(.*):(.*)@(.*):([0-9]+)\/(.*)/", getenv('DATABASE_URL'), $output_array);
 $wgDBtype = "postgres";
 $wgDBserver = $output_array[3];
 $wgDBname = $output_array[5];
