@@ -129,3 +129,26 @@ wfLoadSkin( 'Vector' );
 # Add more configuration options below.
 
 require_once "$IP/extensions/ConfirmAccount/ConfirmAccount.php";
+
+$wgMakeUserPageFromBio = false;
+$wgAutoWelcomeNewUsers = false;
+$wgConfirmAccountRequestFormItems = array(
+	'UserName'        => array( 'enabled' => false ),
+	'RealName'        => array( 'enabled' => false ),
+	'Biography'       => array( 'enabled' => false, 'minWords' => 50 ),
+	'AreasOfInterest' => array( 'enabled' => false ),
+	'CV'              => array( 'enabled' => false ),
+	'Notes'           => array( 'enabled' => false ),
+	'Links'           => array( 'enabled' => false ),
+	'TermsOfService'  => array( 'enabled' => false ),
+);
+
+# Disable reading by anonymous users
+$wgGroupPermissions['*']['read'] = false;
+
+# Disable anonymous editing
+$wgGroupPermissions['*']['edit'] = false;
+
+# Whitelist request acount
+$wgWhitelistRead = array( 'Special:RequestAccount', 'Main Page' );
+
