@@ -150,5 +150,5 @@ $wgGroupPermissions['*']['read'] = false;
 $wgGroupPermissions['*']['edit'] = false;
 
 # Whitelist request acount
-$wgWhitelistRead = array( 'Special:RequestAccount', 'Main Page' );
+$wgWhitelistRead = array( 'Special:Begär_konto', 'Huvudsida' );
 
