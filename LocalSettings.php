@@ -143,6 +143,9 @@ $wgConfirmAccountRequestFormItems = array(
 	'TermsOfService'  => array( 'enabled' => true ),
 );
 
+# Notify Kommunikator incase user applies for account
+$wgConfirmAccountContact = "info@d.kth.se";
+
 # Disable reading by anonymous users
 $wgGroupPermissions['*']['read'] = false;
 
