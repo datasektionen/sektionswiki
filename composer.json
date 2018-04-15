@@ -17,6 +17,7 @@
 	},
 	"require": {
 		"composer/semver": "1.4.2",
+		"aws/aws-sdk-php": "3.x",
 		"cssjanus/cssjanus": "1.2.0",
 		"ext-ctype": "*",
 		"ext-iconv": "*",

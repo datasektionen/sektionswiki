@@ -18,8 +18,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename = "Wiki Konglig Datasektionen";
-$wgMetaNamespace = "Wiki_Konglig_Datasektionen";
+$wgSitename = "Konglig Datasektionen";
+$wgMetaNamespace = "Konglig_Datasektionen";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -43,8 +43,8 @@ $wgLogo = "$wgResourceBasePath/resources/assets/skold_svart_thumb.png";
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 
-$wgEmergencyContact = "apache@wiki.datasektionen.se";
-$wgPasswordSender = "apache@wiki.datasektionen.se";
+$wgEmergencyContact = "info@d.kth.se";
+$wgPasswordSender = "no-reply@datasektionen.se";
 
 $wgEnotifUserTalk = false; # UPO
 $wgEnotifWatchlist = false; # UPO
@@ -151,4 +151,9 @@ $wgGroupPermissions['*']['edit'] = false;
 
 # Whitelist request acount
 $wgWhitelistRead = array( 'Special:Begär_konto', 'Huvudsida' );
+
+wfLoadExtension("SesMailer");
+$wgSesMailerRegion = "eu-west-1"; // AWS Region
+$wgSesMailerKey = getenv('AWS_ACCESS_KEY_ID'); // Access Key ID for IAM user with ses:SendEmail permission
+$wgSesMailerSecret = getenv('AWS_SECRET_ACCESS_KEY'); // Secret Access Key
 
