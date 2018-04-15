@@ -24,7 +24,7 @@
 	"requestaccount-leg-person": "Personlig information",
 	"requestaccount-leg-other": "Annan information",
 	"requestaccount-leg-tos": "Användarvillkor",
-	"requestaccount-acc-text": "När du skickar in den här ansökningen kommer ett bekräftelsemeddelande skickas till din e-postadress. Adressen kommer inte att publiceras.\nVar god svara på meddelandet genom att klicka på bekräftelselänken i e-postmeddelandet.\nDitt lösenord kommer även skickas till din e-postadress när ditt konto skapas.",
+	"requestaccount-acc-text": "ANVÄND DITT KTH-ID OCH DIN KTH-MEJLADRESS. När du skickar in den här ansökningen kommer ett bekräftelsemeddelande skickas till din e-postadress. Adressen kommer inte att publiceras.\nVar god svara på meddelandet genom att klicka på bekräftelselänken i e-postmeddelandet.\nDitt lösenord kommer även skickas till din e-postadress när ditt konto skapas.",
 	"requestaccount-areas-text": "Välj här de ämnesområden som du har expertkunskap om eller som du kommer att arbeta mest med.",
 	"requestaccount-ext-text": "Följande information kommer hållas hemlig och bara användas för denna ansökan.\nOm du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att lättare bekräfta din identitet.",
 	"requestaccount-bio-text": "Försök att ange relevanta meriter och referenser i biografin nedan.",
