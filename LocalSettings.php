@@ -150,7 +150,7 @@ $wgGroupPermissions['*']['read'] = false;
 $wgGroupPermissions['*']['edit'] = false;
 
 # Whitelist request acount
-$wgWhitelistRead = array( 'Special:Begär_konto', 'Huvudsida' );
+$wgWhitelistRead = array( 'Special:Begär_konto', 'Huvudsida', 'Konglig_Datasektionen:Användningsvillkor');
 
 wfLoadExtension("SesMailer");
 $wgSesMailerRegion = "eu-west-1"; // AWS Region
