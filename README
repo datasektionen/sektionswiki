@@ -1,3 +1,13 @@
+Environment variables to set:
+
+* SECRET_KEY - should be a secret random 64 byte A-Za-z0-9 string
+* DATABASE_URL - should be a postgresql URL
+
+For SesMailer:
+* AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY
+
+
 == MediaWiki ==
 
 MediaWiki is a free and open-source wiki software package written in PHP. It
