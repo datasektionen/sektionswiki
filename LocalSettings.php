@@ -159,15 +159,11 @@ $wgWhitelistRead = array( 'Special:Begär_konto', 'Huvudsida', 'Konglig_Datasekt
 # GDPR stuff
 $wgGroupPermissions['sysop']['deletelogentry'] = true;
 $wgGroupPermissions['sysop']['deleterevision'] = true;
-$wgGroupPermissions['oversight']['hideuser'] = true;
-$wgGroupPermissions['oversight']['suppressrevision'] = true;
-$wgGroupPermissions['oversight']['suppressionlog'] = true;
-$wgGroupPermissions['observers']['viewsuppressed'] = true;
 
 # UserMerge
 wfLoadExtension( 'UserMerge' );
 // By default nobody can use this function, enable forbureaucrat?
-$wgGroupPermissions['bureaucrat']['usermerge'] = true;
+$wgGroupPermissions['sysop']['usermerge'] = true;
 
 # Stacktrace
 $wgShowExceptionDetails = true;
