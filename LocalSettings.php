@@ -163,6 +163,12 @@ $wgGroupPermissions['oversight']['suppressrevision'] = true;
 $wgGroupPermissions['oversight']['suppressionlog'] = true;
 $wgGroupPermissions['observers']['viewsuppressed'] = true;
 
+# UserMerge
+wfLoadExtension( 'UserMerge' );
+// By default nobody can use this function, enable forbureaucrat?
+$wgGroupPermissions['bureaucrat']['usermerge'] = true;
+
+# AWS SES configuration
 wfLoadExtension("SesMailer");
 $wgSesMailerRegion = "eu-west-1"; // AWS Region
 $wgSesMailerKey = getenv('AWS_ACCESS_KEY_ID'); // Access Key ID for IAM user with ses:SendEmail permission
