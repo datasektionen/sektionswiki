@@ -169,6 +169,11 @@ wfLoadExtension( 'UserMerge' );
 // By default nobody can use this function, enable forbureaucrat?
 $wgGroupPermissions['bureaucrat']['usermerge'] = true;
 
+# Stacktrace
+$wgShowExceptionDetails = true;
+$wgShowDBErrorBacktrace = true;
+$wgShowSQLErrors = true;
+
 # AWS SES configuration
 wfLoadExtension("SesMailer");
 $wgSesMailerRegion = "eu-west-1"; // AWS Region
