@@ -155,6 +155,14 @@ $wgGroupPermissions['*']['edit'] = false;
 # Whitelist request acount
 $wgWhitelistRead = array( 'Special:Begär_konto', 'Huvudsida', 'Konglig_Datasektionen:Användningsvillkor', 'GDPR');
 
+# GDPR stuff
+$wgGroupPermissions['sysop']['deletelogentry'] = true;
+$wgGroupPermissions['sysop']['deleterevision'] = true;
+$wgGroupPermissions['oversight']['hideuser'] = true;
+$wgGroupPermissions['oversight']['suppressrevision'] = true;
+$wgGroupPermissions['oversight']['suppressionlog'] = true;
+$wgGroupPermissions['observers']['viewsuppressed'] = true;
+
 wfLoadExtension("SesMailer");
 $wgSesMailerRegion = "eu-west-1"; // AWS Region
 $wgSesMailerKey = getenv('AWS_ACCESS_KEY_ID'); // Access Key ID for IAM user with ses:SendEmail permission
